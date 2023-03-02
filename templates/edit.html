@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+  </head>
+  <body>
+    <center>
+        <h1>Welcome to My Website</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label>Name:</label>
+            <input type="text" name='name' value={{pob.name}}>
+            <br><br>
+            <label>Email:</label>
+            <input type="email" name='email' value={{pob.email}}>
+            <br><br>           
+            <label>Password:</label>
+            <input type="password" name='password' value={{pob.password}}>
+            <br><br>
+            <label>Mobile:</label>
+            <input type="mobile" name='mobile' value={{pob.mobile}}>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>  
+    </center>
+  </body>
+</html>
